@@ -196,7 +196,7 @@ int GetThingZ(level_t *l, thing_t *t, poly_t *ss)
 
 	for(i=0; i<l->n_ssectors; i++) {
 		if(PointInPoly(&p,&ss[i]))
-			return(l->sectors[ss[i].sector].floor_alt + 8);
+			return(l->sectors[ss[i].sector].floor_alt + 24);
 	}
 
 	return(0);
