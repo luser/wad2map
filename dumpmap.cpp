@@ -28,7 +28,7 @@
 	generated from the doom level.
 */
 
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "defs.h"
 #include "types.h"
 #include "doomlevel.h"

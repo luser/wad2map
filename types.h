@@ -26,8 +26,8 @@
 
 	This file contains data types for the program.
 */
-#ifndef __TYPES_H_
-#define __TYPES_H_
+#ifndef WAD2MAP_TYPES_H_
+#define WAD2MAP_TYPES_H_
 
 // we can use double or int
 #ifdef USE_FLOATING_POINT
@@ -68,4 +68,4 @@ typedef struct poly_s {
 	short sector;										// sector this is a part of (-1 for none)
 } poly_t;
 
-#endif /* __TYPES_H_ */
+#endif /* WAD2MAP_TYPES_H_ */

@@ -27,9 +27,8 @@
 	This file contains the 2d clipping routines for forming ssectors.
 */
 
-#include <StdAfx.h>
+#include "stdafx.h"
 #include <math.h>
-#include "types.h"
 #include "2dclip.h"
 
 // find out which side of a line a point is on

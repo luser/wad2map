@@ -30,6 +30,8 @@
 #ifndef __2DCLIP_H_
 #define __2DCLIP_H_
 
+#include "types.h"
+
 typedef enum {
 	on_line,
 	left_side,

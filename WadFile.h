@@ -29,6 +29,8 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
+#include <stdint.h>
+
 // This is defined for windows
 #ifndef ZeroMemory
 #define ZeroMemory(x,y) memset(x,0,y)
@@ -38,21 +40,21 @@
 typedef struct s_wadheader
 {
 	char id[4];		// wad id, either IWAD or PWAD
-	long numlumps;	// number of entries
-	long dirpos;	// offset to start of directory
+	uint32_t numlumps;	// number of entries
+	uint32_t dirpos;	// offset to start of directory
 } wadheader_t;
 
 // Wad Directory Entry struct
 typedef struct s_waddirentry
 {
-	long offset;	// offset from start of wad, in bytes
-	long size;		// size, in bytes
+	uint32_t offset;	// offset from start of wad, in bytes
+	uint32_t size;		// size, in bytes
 	char name[8];	// name, padded with zeroes
 } waddirentry_t;
 
 // wad types
-#define IWAD_ID "IWAD"
-#define PWAD_ID "PWAD"
+const char* IWAD_ID = "IWAD";
+const char* PWAD_ID = "PWAD";
 
 enum wadtypes {
 	NO_WAD,
@@ -60,7 +62,7 @@ enum wadtypes {
 	PWAD
 };
 
-class CWadFile  
+class CWadFile
 {
 public:
 	bool SeekFirst(char *szEntry);

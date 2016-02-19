@@ -31,9 +31,11 @@
 #endif // _MSC_VER > 1000
 
 #include <stdlib.h>
+#if _MSC_VER
 #include <malloc.h>
-#include <memory.h>
 #include <tchar.h>
+#endif
+#include <memory.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

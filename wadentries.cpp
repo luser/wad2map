@@ -28,9 +28,9 @@
 	a function to look them up into the enum defined in wadentries.h
 */
 
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "defs.h"
-#include "WadFile.h"
+#include "wadfile.h"
 #include "doomlevel.h"
 #include "wadentries.h"
 

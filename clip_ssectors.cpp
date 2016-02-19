@@ -27,12 +27,12 @@
 	This file clips the ssectors using each node division line traversing the node tree until
 	a ssector is hit, and then clips the ssector to the bounding segs of the ssector.
 */
-#include <StdAfx.h>
+#include "stdafx.h"
 #include "defs.h"
 #include "types.h"
 #include "2dclip.h"
 #include "doomlevel.h"
-#include "WadFile.h"
+#include "wadfile.h"
 #include "wadentries.h"
 #include "clip_ssectors.h"
 #include "progress.h"

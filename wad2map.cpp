@@ -23,11 +23,11 @@
 
 	Main entry point
 */
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "defs.h"
 #include "types.h"
 #include "doomlevel.h"
-#include "WadFile.h"
+#include "wadfile.h"
 #include "convert.h"
 #include "globals.h"
 #include "things.h"

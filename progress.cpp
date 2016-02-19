@@ -27,7 +27,7 @@
 	Defines routines for drawing an ascii progress bar.
 */
 
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "progress.h"
 
 int progLen = 10;

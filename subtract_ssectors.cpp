@@ -27,7 +27,7 @@
 	This file contains routines to subtract the ssector polygons from the
 	world polygon, creating the "wall" brushes.
 */
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "defs.h"
 #include "types.h"
 #include "2dclip.h"

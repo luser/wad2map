@@ -27,9 +27,9 @@
 	This file contains the main routines for running through the conversion process.
 */
 
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "defs.h"
-#include "WadFile.h"
+#include "wadfile.h"
 #include "convert.h"
 #include "types.h"
 #include "doomlevel.h"

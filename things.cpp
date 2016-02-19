@@ -28,7 +28,7 @@
 	to a .map file.
 */
 
-#include "StdAfx.h"
+#include "stdafx.h"
 #include <errno.h>
 #include "defs.h"
 #include "types.h"

@@ -22,8 +22,8 @@
 //
 //////////////////////////////////////////////////////////////////////
 
-#include "StdAfx.h"
-#include "WadFile.h"
+#include "stdafx.h"
+#include "wadfile.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -63,7 +63,7 @@ bool CWadFile::Open(char *szFile)
 	if(isOpen)
 		Close();
 
-	ZeroMemory(&header,sizeof(header));
+	ZeroMemory(&header, sizeof(header));
 
 	wadfile = fopen(szFile,"rb");
 
