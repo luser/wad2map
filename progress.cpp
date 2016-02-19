@@ -70,7 +70,7 @@ void DrawProgress(long total, long count)
 	c = int(progLen * d);
 
 	// clear last progress bar
-	printf(clearBuf);
+	printf("%s",clearBuf);
 
 	// print progress bar
 	for(i=0;i<progLen;i++)

@@ -76,7 +76,8 @@ void LoadThingConvertFile(char *szFile)
 	i = 0;
 
 	while(!feof(f)) {
-		fgets(strIn,1024,f);
+		if (fgets(strIn,1024,f) == NULL)
+			break;
 		if(feof(f))
 			break;
 

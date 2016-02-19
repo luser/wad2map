@@ -164,7 +164,7 @@ bool ClipPolyToLine(poly_t *poly, line_t *l, side keep)
 	from = PointLocation(&poly->p[poly->num_verts-1],l);
 	to = PointLocation(&poly->p[0],l);
 	memcpy(tmp,&poly->p[poly->num_verts-1],sizeof(point_t)*2);
-	memcpy(&tmp[1],&poly->p[0],sizeof(point_t)*2);
+	memcpy(&tmp[1],&poly->p[0],sizeof(point_t));
 	if(from != drop) {
 		if(to == drop) {
 			// check for points on line...
@@ -352,8 +352,7 @@ void DumpPoly(FILE *f, poly_t *p)
 
 	for(i=0;i<p->num_verts;i++) {
 		printpoint(szTmp,p->p+i);
-		fprintf(f,szTmp);
-		fprintf(f,", ");
+		fprintf(f,"%s, ",szTmp);
 	}
 	fprintf(f,"\n");
 }

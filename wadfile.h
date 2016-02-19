@@ -53,8 +53,8 @@ typedef struct s_waddirentry
 } waddirentry_t;
 
 // wad types
-const char* IWAD_ID = "IWAD";
-const char* PWAD_ID = "PWAD";
+static const char* IWAD_ID = "IWAD";
+static const char* PWAD_ID = "PWAD";
 
 enum wadtypes {
 	NO_WAD,
