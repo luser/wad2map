@@ -31,7 +31,7 @@
 #define __DUMPMAP_H_
 
 void DumpMap(char *mapname, level_t *l, poly_t *ss, poly_t *world, int nWorld);
-void OutputPlane(FILE *f,point3d_t p[], char *tex);
+void OutputPlane(FILE *f,point3d_t p[], const char *tex);
 void OutputSealBrushes(FILE *f, level_t *l, int z_max, int z_min);
 void WriteZPlane(FILE *f, int z, bool dir);
 void WriteXPlane(FILE *f, int x, bool dir);

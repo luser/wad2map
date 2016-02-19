@@ -36,7 +36,7 @@
 #include "dumpmap.h"
 #include "progress.h"
 
-#define LAMETEX "base_floor/diamond2c"
+const char* LAMETEX = "base_floor/diamond2c";
 
 void DumpMap(char *mapname, level_t *l, poly_t *ss, poly_t *world, int nWorld)
 {
@@ -432,13 +432,13 @@ void WriteYPlane(FILE *f, int y, bool dir)
 	OutputPlane(f,p,LAMETEX);
 }
 
-void OutputPlane(FILE *f,point3d_t p[], char *tex)
+void OutputPlane(FILE *f,point3d_t p[], const char *tex)
 {
 	// output points
 	fprintf(f,"( "CSPEC" "CSPEC" "CSPEC" ) ( "CSPEC" "CSPEC" "CSPEC" ) ( "CSPEC" "CSPEC" "CSPEC" ) ",
 		p[0].x,p[0].y,p[0].z,p[1].x,p[1].y,p[1].z,p[2].x,p[2].y,p[2].z);
 	// output texture
 	fprintf(f,"%s ",tex);
-	// output other data (x/y offset, rotation, x/y scale, ? ? ?
-	fprintf(f,"%d %d %d %8.6f %8.6f %d %d %d\n",0,0,0,1.0,1.0,0,0,0);
+	// output texcoords: x offset, y offset, rotation, x scale, y scale
+	fprintf(f,"0 0 0 1.0 1.0\n");
 }
